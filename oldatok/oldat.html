@@ -29,9 +29,19 @@
 
 
 		<h2>Feladat</h2>
-		<p>Hány tömegszázalékos az az oldat, amelyben g sót feloldunk g vízben?</p>
-		<p>Eredmény: <span>?</span> m/m%</p>
+		<p>Hány tömegszázalékos az az oldat, amelyben <input type="number" min="0" id="moa"> g sót feloldunk <input type="number" min="0" id="mosz"> g vízben?</p>
+		<input type="button" value="Számol" onclick="myFunction()">
+		<p>Eredmény: <span id="megoldas">?</span> m/m%</p>
 
+		<script>
+
+			function myFunction() {
+			moa = parseInt(document.getElementById("moa").value);
+			mosz = parseInt(document.getElementById("mosz").value);	
+			document.getElementById("megoldas").innerHTML = ( moa / ( mosz + moa )) *100;
+			}
+
+		</script>
 
 		<p id="forras"><a target="_blank" href="https://hu.wikipedia.org/wiki/Oldat">Wikipedia-Oldat</a></p>
 	</div>

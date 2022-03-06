@@ -11,7 +11,8 @@ body {
 
 h1 {
 	border-bottom: 8px dashed teal;
-	font-style: initial;
+	font-variant: small-caps;
+	letter-spacing: 3px;
 }
 
 p,
@@ -21,6 +22,8 @@ li {
 
 #kep {
 	border: 10px outset teal;
+	float: right;
+	margin-left: 15px;
 }
 
 #keplet {
@@ -43,11 +46,15 @@ input {
 }
 
 #megoldas {
-	font-weight: bold;	
+	font-weight: bold;
+	color: teal;
+	padding: 5px;
 }
 
 #forras {
 	font-weight:bold;
+	text-align: right;
+	font-style: italic;
 }
 
 a {
@@ -56,3 +63,11 @@ a {
 	text-shadow: 1px 1px 0px white;
 }
 
+ul{
+	list-style-image: url(lombik.png);
+}
+
+.oldat{
+	font-weight: bold;
+	text-decoration: underline;
+}
