@@ -1,0 +1,44 @@
+body{
+  padding: 5px 10px 0px;
+  margin: 0px;
+  text-align: justify;
+}
+
+p:first-letter {
+  margin-left:15px;
+}
+
+#elemek:first-letter {
+  margin-left:0px;
+}
+
+h1{
+  text-align: center;
+}
+
+h1,h2{
+  color:#00008B;
+}
+
+img.keplet{
+  height: 2em;
+  vertical-align: -0.5em;
+}
+
+#sorozatkep{
+  width: 100%;
+  float:left;
+  margin: 10px;
+}
+
+#elemek{
+  text-align: center;
+  margin: 50px;
+}
+
+.lista li{
+  font-style: normal;
+}input[type="text"],input[type="number"] 
+{
+  width: 30px;
+}
