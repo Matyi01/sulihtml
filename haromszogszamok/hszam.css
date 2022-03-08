@@ -2,6 +2,7 @@ body{
   padding: 5px 10px 0px;
   margin: 0px;
   text-align: justify;
+  background-color: #E4E4FF;
 }
 
 p:first-letter {
@@ -26,19 +27,23 @@ img.keplet{
 }
 
 #sorozatkep{
-  width: 100%;
-  float:left;
+  width: 200px;
+  float: left;
   margin: 10px;
 }
 
 #elemek{
   text-align: center;
   margin: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .lista li{
-  font-style: normal;
-}input[type="text"],input[type="number"] 
+  font-style: italic;
+}
+
+input[type="text"],input[type="number"] 
 {
   width: 30px;
 }
