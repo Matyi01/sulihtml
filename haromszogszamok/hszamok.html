@@ -28,10 +28,10 @@
             function myFunction() {
                 n = parseInt(document.getElementById("input").value);
                 eredmeny = (n*(n+1))/2;
-                if (eredmeny != "NaN") {
-                    alert(eredmeny);
-                } else {
+                if (isNaN(eredmeny)) {
                     alert("Hiba");
+                } else {
+                    alert(eredmeny);
                 }
             }
         </script>
