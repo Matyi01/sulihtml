@@ -63,9 +63,27 @@
 
 		<p>Egy oázisban tevék és struccok mászkálnak. Összesen 24 fejük és 58 lábuk van. Hány teve és hány strucc van az oázisban?</p>
 		<img src="oazis.png" title="Oázis" alt="Oázis" class="tevekep" id="oazis">
-		<p>Teve: </p>
-		<p>Strucc: </p>
-
+		<p>Teve: <input type="number" id="teve"></p>
+		<p>Strucc: <input type="number" id="strucc"></p>
+		<input type="button" value="Tipp" onclick="myFunction()"> <span id="tipp"></span>
 	</div>
+
+	<script>
+		function myFunction() {
+			teve = parseInt(document.getElementById("teve").value);
+			strucc = parseInt(document.getElementById("strucc").value);
+			tipp = teve + strucc;
+			if (isNaN(tipp)) {
+				alert("Hibás adat");
+			} else if ( teve < 5) {
+				alert("Ettől több teve van!");
+			} else if ( teve > 5) {
+				alert("Ettől kevesebb teve van!");
+			}else if (teve = 5 , strucc = 19) {
+				document.getElementById("tipp").innerHTML = "Helyes! 5 teve és 19 strucc";
+			} 
+		}
+	</script>
+
 </body>
 </html>
