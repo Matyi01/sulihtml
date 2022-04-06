@@ -4,14 +4,14 @@
     height: 100px;
 }
 .w{
-    background-color: aqua;
+    background-color: oldlace;
     width: 100px;
     height: 100px;
 }
-.flex-container{
+.row{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
