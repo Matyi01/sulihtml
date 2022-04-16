@@ -1,3 +1,60 @@
-header{
-    background-image: url(logo.jpg);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav, section, #middle{
+    float: left;
+}
+header, footer {
+    background-color: #444444;
+    color: white;
+}
+#middle{
+    background-color: #aaa;
+}
+ul, article{
+    background-color: white;
+}
+nav ul li a:hover{
+    background-color: burlywood;
+}
+article h2{
+    background-color: darkslategrey;
+    color: white;
+}
+header, footer{
+    text-align: center;
+}
+#container{
+    width: 1000px;
+    margin: auto;
+}
+nav ul{
+    list-style-type: none;
+    margin: 20px;
+}
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+article{
+    margin: 20px;
+    text-align: justify;
+    padding: 10px;
+}
+article img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    float: right;
+    margin: 5px;
+}
+nav{
+    width: 25%;
+}
+section{
+    width: 75%;
 }
