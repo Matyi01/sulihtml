@@ -1,11 +1,29 @@
 header{
-    background-color: red;
     height: 100px;
     padding: 20px;
     text-align: right;
+    background-image: url("images/32320345_2478521_08d2ab1ac8a2ad8c72ba6b418f785ef6_wm.jpg");
+    background-position-y: 600px;
+    color: antiquewhite;
 }
 nav{
-    background-color: blue;
+    background-color: steelblue;
+    color: antiquewhite;
+    padding-left: 20px;
+}
+nav a{
+    color: antiquewhite;
+    text-decoration: unset;
+}
+nav li{
+    list-style-type: none;
+}
+nav ul{
+    padding-left: 10px;
+}
+nav a:hover li{
+    color: steelblue;
+    background-color: antiquewhite;
 }
 .jobb-sav{
     background-color: green;
@@ -14,7 +32,14 @@ nav{
     background-color: aqua;
 }
 footer{
-    background-color: yellow;
+    min-height: 50px;
+    text-align: center;
+    padding: 15px;
+    background-color: steelblue;
+    color: antiquewhite;
+}
+body{
+    margin: 0;
 }
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif
@@ -24,9 +49,6 @@ footer{
     grid-template-columns: auto;
 }
 @media only screen and (min-width: 600px){
-    footer{
-        background-color: orange;
-    }
     #grid-container{
         grid-template-columns: 25% 75%;
     }
@@ -48,9 +70,6 @@ footer{
     }
 }
 @media only screen and (min-width: 1200px){
-    footer{
-        background-color: brown;
-    }
     #grid-container{
         width: 1200px;
         grid-template-columns: 25% 50% 25%;
