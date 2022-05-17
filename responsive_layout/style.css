@@ -1,5 +1,8 @@
 header{
     background-color: red;
+    height: 100px;
+    padding: 20px;
+    text-align: right;
 }
 nav{
     background-color: blue;
@@ -12,6 +15,9 @@ nav{
 }
 footer{
     background-color: yellow;
+}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 #grid-container{
     display: grid;
