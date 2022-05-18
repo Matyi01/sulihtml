@@ -35,6 +35,9 @@ nav a:hover li{
 }
 .tartalom{
     background-color: wheat;
+    color: steelblue;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 footer{
     min-height: 50px;
@@ -52,6 +55,14 @@ body{
 #grid-container{
     display: grid;
     grid-template-columns: auto;
+}
+.tartalom h2{
+    font-family: cursive;
+    text-align: center;
+    font-variant: small-caps;
+}
+.jobb-sav h3{
+    text-align: center;
 }
 @media only screen and (min-width: 600px){
     #grid-container{
@@ -79,7 +90,7 @@ body{
 @media only screen and (min-width: 1200px){
     #grid-container{
         width: 1200px;
-        grid-template-columns: 25% 50% 25%;
+        grid-template-columns: 15% 60% 25%;
         margin: auto;
     }
     header{
