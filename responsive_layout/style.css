@@ -1,42 +1,47 @@
 header{
-    height: 100px;
+    height: 150px;
     padding: 20px;
     text-align: right;
     background-image: url("images/32320345_2478521_08d2ab1ac8a2ad8c72ba6b418f785ef6_wm.jpg");
-    background-position-y: 600px;
-    color: antiquewhite;
+    background-position-y: 375px;
+    color: wheat;
+    background-size: 600px;
 }
 nav{
     background-color: steelblue;
-    color: antiquewhite;
+    color: wheat;
     padding-left: 20px;
 }
 nav a{
-    color: antiquewhite;
+    color: wheat;
     text-decoration: unset;
 }
 nav li{
     list-style-type: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 nav ul{
     padding-left: 10px;
 }
 nav a:hover li{
     color: steelblue;
-    background-color: antiquewhite;
+    background-color: wheat;
 }
 .jobb-sav{
-    background-color: green;
+    background-color: wheat;
+    color: steelblue;
+    padding-left: 10px;
 }
 .tartalom{
-    background-color: aqua;
+    background-color: wheat;
 }
 footer{
     min-height: 50px;
     text-align: center;
     padding: 15px;
     background-color: steelblue;
-    color: antiquewhite;
+    color: wheat;
 }
 body{
     margin: 0;
@@ -54,6 +59,8 @@ body{
     }
     header{
         grid-column: 1/3;
+        background-size: 1200px;
+        background-position-y: 650px;
     }
     nav{
         grid-column: 1;
@@ -77,12 +84,15 @@ body{
     }
     header{
         grid-column: 1/4;
+        background-size: 1200px;
+        background-position-y: 650px;
     }
     nav{
         grid-column: 1;
     }
     .jobb-sav{
         grid-column: 3/4;
+        border-left: 2px solid steelblue;
     }
     .tartalom{
         grid-column: 2/3;
