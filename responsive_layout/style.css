@@ -2,18 +2,18 @@ header{
     height: 150px;
     padding: 20px;
     text-align: right;
-    background-image: url("images/IMG_20220527_105424.jpg");
+    background-image: url("images/nature-landscape-tree-pine-code-forest-1596066-pxhere.com.jpg");
     background-position-y: 350px;
-    color: wheat;
+    color: whitesmoke;
     background-size: 600px;
 }
 nav{
-    background-color: steelblue;
-    color: wheat;
+    background-color: lightslategray;
+    color: whitesmoke;
     padding-left: 20px;
 }
 nav a{
-    color: wheat;
+    color: whitesmoke;
     text-decoration: unset;
 }
 nav li{
@@ -25,17 +25,17 @@ nav ul{
     padding-left: 10px;
 }
 nav a:hover li{
-    color: steelblue;
-    background-color: wheat;
+    color: lightslategray;
+    background-color: whitesmoke;
 }
 .jobb-sav{
-    background-color: wheat;
-    color: steelblue;
+    background-color: whitesmoke;
+    color: lightslategray;
     padding-left: 10px;
 }
 .tartalom{
-    background-color: wheat;
-    color: steelblue;
+    background-color: whitesmoke;
+    color: lightslategray;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -43,8 +43,8 @@ footer{
     min-height: 50px;
     text-align: center;
     padding: 15px;
-    background-color: steelblue;
-    color: wheat;
+    background-color: lightslategray;
+    color: whitesmoke;
 }
 body{
     margin: 0;
@@ -66,6 +66,7 @@ body{
 .tartalom picture *{
     max-width: 50%;
     float: left;
+    padding-right: 20px;
 }
 @media only screen and (min-width: 600px){
     #grid-container{
@@ -106,7 +107,7 @@ body{
     }
     .jobb-sav{
         grid-column: 3/4;
-        border-left: 2px solid steelblue;
+        border-left: 2px solid lightslategray;
     }
     .tartalom{
         grid-column: 2/3;
