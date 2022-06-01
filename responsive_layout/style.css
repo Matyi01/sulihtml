@@ -3,7 +3,7 @@ header{
     padding: 20px;
     text-align: right;
     background-image: url("images/IMG_20220527_105424.jpg");
-    background-position-y: 500px;
+    background-position-y: 350px;
     color: wheat;
     background-size: 600px;
 }
@@ -99,7 +99,7 @@ body{
     header{
         grid-column: 1/4;
         background-size: 1200px;
-        background-position-y: 10px;
+        background-position-y: 550px;
     }
     nav{
         grid-column: 1;

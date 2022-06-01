@@ -1,0 +1,27 @@
+#grid-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    background-color: lightgray;
+    height: 600px;
+    width: 700px;
+}
+#grid-container > div{
+    border: solid 1px black;
+    background-color: black;
+}
+#item1{
+    grid-area: 2/3/2/3;
+}
+#item2{
+    grid-area: 2/5/2/5;
+}
+#item3{
+    grid-area: 4/2/4/2;
+}
+#item4{
+    grid-area: 5/3/5/6;
+}
+#item5{
+    grid-area: 4/6/4/6;
+}
