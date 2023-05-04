@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="grid-container">
+            <header><h1>Utazás 2022</h1></header>
+            <nav>
+                <h3>Menüpontok</h3>
+                <ul>
+                    <a href="nap1.html"><li>1. nap</li></a>
+                    <a href="nap2.html"><li>2. nap</li></a>
+                    <a href="nap3.html"><li>3. nap</li></a>
+                    <a href="nap4.html"><li>4. nap</li></a>
+                    <a href="nap5.html"><li>5. nap</li></a>
+                    <a href="nap6.html"><li>6. nap</li></a>
+                </ul>
+            </nav>
+            <section class="tartalom">
+                <h2>1. nap</h2>
+                <!-- Container for the image gallery -->
+                <div class="container">
+                
+                    <!-- Full-width images with number text -->
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 6</div>
+                        <img src="images/1.nap/1.jpg" >
+                    </div>
+                
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 6</div>
+                        <img src="images/1.nap/2.jpg" >
+                    </div>
+                
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 6</div>
+                        <img src="images/1.nap/4.jpg" >
+                    </div>
+                
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 6</div>
+                        <img src="images/1.nap/3.jpg" >
+                    </div>
+                
+                    <div class="mySlides">
+                      <div class="numbertext">5 / 6</div>
+                        <img src="images/1.nap/5.jpg" >
+                    </div>
+                
+                    <div class="mySlides">
+                      <div class="numbertext">6 / 6</div>
+                        <img src="images/1.nap/6.jpg" >
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                    <!-- Thumbnail images -->
+                    <div class="row">
+                      <div class="column">
+                        <img class="demo cursor" src="images/1.nap/1.jpg" style="width:100%" onclick="currentSlide(1)">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="images/1.nap/2.jpg" style="width:100%" onclick="currentSlide(2)">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="images/1.nap/4.jpg" style="width:100%" onclick="currentSlide(3)">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="images/1.nap/3.jpg" style="width:100%" onclick="currentSlide(4)">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="images/1.nap/5.jpg" style="width:100%" onclick="currentSlide(5)">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="images/1.nap/6.jpg" style="width:100%" onclick="currentSlide(6)">
+                      </div>
+                    </div>
+                  </div>
+                <p>
+                    2022. május 23.-án indultunk Nagyatádról az Ady Endre Gimnázium parkolójából reggel öt órakor. Az út hosszú és fárasztó volt, bár jól szórakoztunk. Az első megállónk Nagyszalontán történt, körülbelül délben, ahol az Arany János Emlékmúzeumot és a Csonka tornyot tekintettük meg. Következőleg Nagyváradon, Szent László sírját néztünk meg, ahonnan fél négykor indultunk a végső állomásunkra, ami Kolozsvár volt. Kolozsvárra körülbelül este nyolc órára értünk, ahol egy gyönyörű szállódában szállhattunk meg.
+                </p>
+            </section>
+            <section class="jobb-sav">     
+                <div class="infobox">
+                    <h3>Iskolánk</h3>
+                    <p>Az Ady Nagyatád egyik középiskolája</p>
+                </div>
+                <div class="infobox">
+                    <h3>Rólam</h3>
+                    <p>Én a 9.c diákja vagyok</p>
+                </div>
+                <div class="infobox">
+                    <h3>Pályázat</h3>
+                    <p>A Határtalanul pályázat keretein belül utaztunk Erdélybe</p>
+                </div>
+            </section>
+            <footer><b>Készítette: Holczer Mátyás, 2022</b></footer>
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("demo");
+              let captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+    </body>
+</html>
