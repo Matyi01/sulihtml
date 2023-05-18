@@ -21,6 +21,7 @@ body{
 .lablec a:hover {
     font-style: italic;
     text-decoration: none;
+    color: black;
 }
 
 p{
