@@ -18,7 +18,7 @@ body{
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    background-image: conic-gradient(red 0deg, red 14.4deg, yellow 14.4deg, yellow 230.4deg, blue 230.4deg, blue 259.2deg, green 259.2deg);
+    background-image: conic-gradient(red 0deg, red 14.4deg, yellow 14.4deg, yellow 230.4deg, blue 230.4deg, blue 331.2deg, green 331.2deg);
 }
 .infolany{
     color: red;
